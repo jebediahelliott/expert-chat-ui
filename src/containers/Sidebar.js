@@ -18,8 +18,17 @@ class Sidebar extends Component {
 
   render() {
     return (
-      
-    )
+      <div>
+        <p>Requires Action</p>
+        {this.renderTabs(this.state.requiresAction)}
+        <p>Active Questions</p>
+        {this.renderTabs(this.state.active)}
+        <p>Inactive Questions</p>
+        {this.renderTabs(this.state.inactive)}
+        <p>Recently Resolved</p>
+        {this.renderTabs(this.state.resolved)}
+      </div>
+    );
   }
 
 
